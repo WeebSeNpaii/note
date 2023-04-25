@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgotpass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/center"
+        android:layout_centerInParent="true">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/center"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textSize="42sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't Worry, We Are Here !"
+            android:textSize="18sp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email3"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginemail3"
+            android:hint="Enter Your Registered Mail"
+            android:inputType="textEmailAddress"
+            >
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/center"
+        android:id="@+id/login3"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="CLICK HERE TO RECOVER"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/recover">
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login3"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="Go Back To Login Screen"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notedetails"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofnotedetail"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleofnotedetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:paddingTop="17dp"
+            android:text="Title Displayed"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/contentofnotedetail"
+        android:layout_width="412dp"
+        android:layout_height="678dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="70dp"
+        android:gravity="top|left"
+        android:hint="Enter your note here..."
+        android:textColor="@color/black"
+        android:textSize="19sp">
+
+    </TextView>
+
+
+
+</RelativeLayout>

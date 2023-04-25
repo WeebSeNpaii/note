@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnote">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofaddnote"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+       >
+
+        <EditText
+            android:id="@+id/titlehere"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Title Here..."
+            android:inputType="text"
+            android:paddingTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/contentnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="65dp"
+        android:gravity="top|left"
+        android:hint="Enter your note here..."
+        android:textColor="@color/black"
+        android:textSize="15sp">
+
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/saveicon"
+        app:maxImageSize="50dp"
+
+        >
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent = "true"
+        android:visibility = "invisible"
+        android:id= "@id/progressbarofaddnote"
+        android:layout_marginTop= "6dp"
+        >
+
+    </ProgressBar>
+</RelativeLayout>

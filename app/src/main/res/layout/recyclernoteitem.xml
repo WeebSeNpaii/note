@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="15dp"
+
+
+
+    >
+
+    <TextView
+        android:id="@+id/notetitletext"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="30dp"
+
+        android:text="Note Title"
+
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+
+    </TextView>
+
+    <ImageView
+
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360dp"
+        android:layout_weight="0"
+        android:src="@drawable/ic_baseline_more_vert_24">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/contentmaster"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="this can be my last wish sorry for that "
+        android:textSize="17sp">
+
+    </TextView>
+
+
+</LinearLayout>
